@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0080cd"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/ed1"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="22dp"
+       android:layout_marginRight="22dp"
+       android:layout_marginTop="70dp"
+       android:hint="Nhập tên đồ uống"
+       android:paddingLeft="12dp"
+       android:background="@color/colorAccent"></EditText>
+   <RadioGroup
+       android:id="@+id/rg1"
+       android:layout_below="@+id/ed1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="12dp"
+       android:layout_marginLeft="22dp"
+       android:layout_marginRight="22dp"
+      >
+      <RadioButton
+          android:id="@+id/bt1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorAccent"
+         android:text="Chân trâu trắng"
+         ></RadioButton>
+      <RadioButton
+          android:id="@+id/bt2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Chân trâu đen"
+          android:textColor="@color/colorAccent"
+          ></RadioButton>
+      <RadioButton
+          android:id="@+id/bt3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Thạch"
+          android:textColor="@color/colorAccent"
+          ></RadioButton>
+   </RadioGroup>
+   <Button
+       android:id="@+id/btn1"
+       android:layout_below="@+id/rg1"
+       android:layout_marginLeft="22dp"
+       android:textStyle="bold"
+       android:background="@color/colorAccents"
+       android:textColor="@color/colorAccent"
+       android:layout_width="172dp"
+       android:text="SEND"
+       android:layout_height="wrap_content"></Button>
+   <Button
+       android:id="@+id/btn2"
+       android:layout_toRightOf="@id/btn1"
+       android:layout_below="@id/rg1"
+       android:layout_marginLeft="22dp"
+       android:textStyle="bold"
+       android:background="@color/colorAccents"
+       android:textColor="@color/colorAccent"
+       android:layout_width="172dp"
+       android:text="RELOAD"
+       android:layout_height="wrap_content"></Button>
+   <TextView
+       android:id="@+id/txt3"
+       android:layout_width="match_parent"
+       android:text="Chọn đuê chọn đuê bà con ơi"
+       android:layout_below="@id/btn2"
+       android:layout_marginLeft="22dp"
+       android:layout_marginRight="22dp"
+       android:layout_marginTop="160dp"
+       android:textColor="@color/colorPrimary"
+       android:background="@drawable/shadown"
+       android:elevation="10dp"
+       android:padding="10dp"
+       android:layout_height="wrap_content"></TextView>
+</RelativeLayout>
